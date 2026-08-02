@@ -24,7 +24,7 @@ jobs:
             pip install -r requirements.txt
 
       - name: Run Smoke Test
-        run: python -m py_compile docker/app1-hello/python/main.py
+        run: python -m py_compile docker/app1-hello/python/app.py
 
   docker-build-push:
     runs-on: ubuntu-latest
